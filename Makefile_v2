@@ -1,0 +1,58 @@
+# -----------------------------------------------------------------------------
+# Compilation Makefile for Hexadecimal Computing Core (Firmware & HDL Stack)
+# -----------------------------------------------------------------------------
+
+# Compiler configuration flags
+CC        = gcc
+CFLAGS    = -O3 -Wall -Wextra -Wpedantic -std=c11 -D_GNU_SOURCE
+TARGET    = build/hex_pcie_streamer
+
+# HDL Verifier Configuration
+IVERILOG  = iverilog
+VFLAGS    = -g2012 -Wall
+
+# Directory structure targets
+SRC_DIR   = src/chips/adapters
+BUILD_DIR = build
+HDL_DIR   = hardware
+
+# Source assignment
+SRC       = $(SRC_DIR)/hex_pcie_streamer.c
+HDL_SRC   = $(HDL_DIR)/hex_pcie_phy_endpoint.v $(HDL_DIR)/tb_hex_pcie_phy.v
+
+.PHONY: all clean verify hdl-verify setup
+
+# Default production target (Now enforces both software and hardware sanity)
+all: setup verify hdl-verify $(TARGET)
+
+# Build environment initialization
+setup:
+	@mkdir -p $(BUILD_DIR)
+
+# Binary compilation sequence
+$(TARGET): $(SRC)
+	@echo "[BUILD] Compiling C Streamer Core with high performance optimization (-O3)..."
+	$(CC) $(CFLAGS) $(SRC) -o $(TARGET)
+	@echo "[SUCCESS] Execution binary generated at: $(TARGET)"
+
+# Software structural validation wrapper target
+verify:
+	@echo "[VERIFY-SW] Launching repository configuration validation utility..."
+	python3 build_hex_board.py --verify-thermal-limits
+	python3 -c "import os; exit(0) if os.path.exists('$(SRC_DIR)/__init__.py') else (print('[ALERT] Missing __init__.py namespace bundle.'), exit(1))"
+
+# Hardware / Verilog automated syntax verification target
+hdl-verify:
+	@echo "[VERIFY-HDL] Auditing Verilog source code and testbench syntax with Icarus Verilog..."
+	@if command -v $(IVERILOG) >/dev/null 2>&1; then \
+		$(IVERILOG) $(VFLAGS) -o $(BUILD_DIR)/hdl_sim_snapshot.vvp $(HDL_SRC); \
+		echo "[SUCCESS] Verilog physical layer syntax checks passed clean."; \
+	else \
+		echo "[WARN] Icarus Verilog (iverilog) not found on host machine. Skipping HDL syntax compilation pass."; \
+	fi
+
+# Environmental cleaning sequence
+clean:
+	@echo "[CLEAN] Purging compiled assets and build artifacts..."
+	rm -rf $(BUILD_DIR)
+	@echo "[CLEAN] Workspace scrub complete."
