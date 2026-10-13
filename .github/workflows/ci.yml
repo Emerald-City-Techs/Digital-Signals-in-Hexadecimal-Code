@@ -1,0 +1,55 @@
+name: RT Hexadecimal Computing Core CI
+
+# Trigger execution pipelines on code changes
+on:
+  push:
+    branches: [ "master", "main" ]
+  pull_request:
+    branches: [ "master", "main" ]
+
+jobs:
+  validate-and-build:
+    name: Framework Audit and Native C Compilation
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Pull down repository snapshot
+    - name: Checkout Code Repository
+      uses: actions/checkout@v4
+
+    # 2. Initialize Runtime Environment
+    - name: Set up Python Environment
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: 'pip' # Speeds up execution on subsequent commits
+
+    # 3. Handle Dependency Trees
+    - name: Install Simulation Infrastructure Prerequisites
+      run: |
+        if [ -f src/requirements.text ]; then
+          pip install -r src/requirements.text
+        else
+          echo "[INFO] No third-party requirements file detected. Using system core modules."
+        fi
+
+    # 4. Enforce Repository Formatting and Namespace Rules
+    - name: Execute Workspace Infrastructure Audit
+      run: |
+        chmod +x build_hex_board.py
+        python build_hex_board.py --verify-thermal-limits
+
+    # 5. Compile Optimized Low-Level Drivers
+    - name: Compile C Streamer Drivers via Makefile
+      run: |
+        make setup
+        make verify
+        make
+
+    # 6. Optional: Upload Artifacts
+    - name: Archive Production Hardware Streamer Binary
+      uses: actions/upload-artifact@v4
+      with:
+        name: hex-pcie-streamer-binary
+        path: build/hex_pcie_streamer
+        retention-days: 7
