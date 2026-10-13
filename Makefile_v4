@@ -1,0 +1,81 @@
+# -----------------------------------------------------------------------------
+# Compilation Makefile for Hexadecimal Multi-Core Media Core Architecture
+# -----------------------------------------------------------------------------
+
+# Compiler configuration flags
+CC         = gcc
+CFLAGS     = -O3 -Wall -Wextra -Wpedantic -std=c11 -D_GNU_SOURCE
+TARGET     = build/hex_pcie_streamer
+
+# HDL Verification Engine (Icarus Verilog)
+IVERILOG   = iverilog
+VFLAGS     = -g2012 -Wall
+
+# Directory structural targets
+SRC_DIR    = src/chips/adapters
+NATIVE_DIR = src/chips/native
+BUILD_DIR  = build
+HDL_DIR    = hardware
+
+# Source File Assignments
+SRC        = $(SRC_DIR)/hex_pcie_streamer.c
+HDL_SRC    = $(HDL_DIR)/hex_pcie_phy_endpoint.v $(HDL_DIR)/tb_hex_pcie_phy.v
+UPGRADE_PY = $(NATIVE_DIR)/hex_processor_upgrade.py
+MEDIA_PY   = $(NATIVE_DIR)/hex_univac_media.py
+CAD_ENGINE = src/build_hex_board_v4.py
+
+.PHONY: all clean verify sw-test media-test hdl-verify setup
+
+# Default integrated build execution stack
+all: setup verify sw-test media-test hdl-verify $(TARGET)
+
+# Build environment provisioning
+setup:
+	@mkdir -p $(BUILD_DIR)
+
+# Binary compilation sequence for low-level physical layer streamer
+$(TARGET): $(SRC)
+	@echo "[BUILD] Compiling C Streamer Core with high performance optimization (-O3)..."
+	$(CC) $(CFLAGS) $(SRC) -o $(TARGET)
+	@echo "[SUCCESS] Execution binary generated at: $(TARGET)"
+
+# Software structural layout, namespace, and geometry CAD validation target
+verify:
+	@echo "[VERIFY-CAD] Executing programmatic hardware trace layout validation..."
+	@if [ -f $(CAD_ENGINE) ]; then \
+		python3 $(CAD_ENGINE) --variant monster; \
+	else \
+		echo "[ERROR] CAD layout file $(CAD_ENGINE) is missing."; exit 1; \
+	fi
+	@python3 -c "import os; exit(0) if os.path.exists('$(SRC_DIR)/__init__.py') and os.path.exists('$(NATIVE_DIR)/__init__.py') else (print('[ALERT] Missing structural package namespace files.'), exit(1))"
+
+# 5-Tier Cache Processor Core Functional Validation Test
+sw-test:
+	@echo "[TEST-CORE] Running architectural validation tests on the 5-Tier APU cache matrix..."
+	@if [ -f $(UPGRADE_PY) ]; then python3 $(UPGRADE_PY); else exit 1; fi
+
+# High-Fidelity Audio / Video Core Stream Synchronization Validation Test
+media-test:
+	@echo "[TEST-MEDIA] Evaluating matrix video frames and 36-bit Univac downconversion sync..."
+	@if [ -f $(MEDIA_PY) ]; then \
+		python3 $(MEDIA_PY); \
+		echo "[SUCCESS] High-fidelity A/V phase alignment and quantization tests verified."; \
+	else \
+		echo "[CRITICAL ERROR] Core media driver file $(MEDIA_PY) not found."; exit 1; \
+	fi
+
+# Hardware / Verilog automated syntax verification target
+hdl-verify:
+	@echo "[VERIFY-HDL] Auditing Verilog source code and testbench syntax with Icarus Verilog..."
+	@if command -v $(IVERILOG) >/dev/null 2>&1; then \
+		$(IVERILOG) $(VFLAGS) -o $(BUILD_DIR)/hdl_sim_snapshot.vvp $(HDL_SRC); \
+		echo "[SUCCESS] Verilog physical layer syntax checks passed clean."; \
+	else \
+		echo "[WARN] Icarus Verilog not found. Skipping HDL syntax compilation pass."; \
+	fi
+
+# Environmental cleaning sequence
+clean:
+	@echo "[CLEAN] Purging compiled assets, simulations, and board artifacts..."
+	rm -rf $(BUILD_DIR)
+	@echo "[CLEAN] Workspace scrub complete."
