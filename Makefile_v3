@@ -1,0 +1,718 @@
+date/time         : 2026-10-12, 21:20:20, 833ms
+computer name     : ONE
+wts client name   : DEV
+user name         : Administrator <admin>
+registered owner  : Windows User
+operating system  : Windows NT New Tablet PC x64 build 9200
+system language   : English
+system up time    : 75 days 23 hours
+program up time   : 1 second
+processors        : 8x Intel(R) Xeon(R) CPU E5-2470 v2 @ 2.40GHz
+physical memory   : 27670/98303 MB (free/total)
+free disk space   : (C:) 35.13 GB
+display mode      : 3277x1728, 32 bit
+process id        : $2754
+allocated memory  : 18.19 MB
+command line      : "C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic\Update.exe" -SILENT -EXERELOAD=NFC -product=RM -subproduct= -EXES=regmech.exe -SVCS=StartManSvc.exe -version=11.1.0.214 -code=079E-9133-B452-5717-AC4A-49DC-C05D-E244 -lang=English -PID=0
+executable        : Update.exe
+exec. date/time   : 2012-08-21 07:43
+version           : 9.0.0.1196
+compiled with     : BCB 2006/07
+madExcept version : 3.0m
+callstack crc     : $f9e8c4aa, $7b1450db, $7b1450db
+exception number  : 1
+exception class   : EOSError
+exception message : System Error. Code: 8. Not enough memory resources are available to process this command.
+
+main thread ($47d0):
+0045f86c +70 Update.exe     SysUtils            RaiseLastOSError
+0045f7f5 +05 Update.exe     SysUtils            RaiseLastOSError
+004fac6b +07 Update.exe     TntSysUtils 1469 +1 WinCheckH
+00506864 +18 Update.exe     TntControls 1088 +1 InitControls
+005bec3f +4f Update.exe     TntControls 1096 +4 initialization
+00404ec1 +3d Update.exe     System       451 +0 InitUnits
+00404f26 +3a Update.exe     System       451 +0 @StartExe
+00407a9a +3a Update.exe     SysInit             @InitExe
+005bf8d8 +0c Update.exe     Update        28 +0 initialization
+75ad2b5e +7e KERNELBASE.dll                     GetVersionExW
+75ad2a2e +4e KERNELBASE.dll                     GetVersionExA
+76cb6707 +17 KERNEL32.DLL                       BaseThreadInitThunk
+
+thread $700c:
+76cb6707 +17 KERNEL32.DLL  BaseThreadInitThunk
+
+thread $7998:
+76cb6707 +17 KERNEL32.DLL  BaseThreadInitThunk
+
+modules:
+00400000 Update.exe          9.0.0.1196    C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+664c0000 AcLayers.DLL        6.2.20348.1   C:\Windows\SYSTEM32
+69f60000 olepro32.dll        6.2.20348.1   C:\Windows\SYSTEM32
+6bc20000 inetmib1.dll        6.2.20348.1   C:\Windows\SYSTEM32
+6c7a0000 tiptsf.dll          6.2.20348.1   C:\Program Files (x86)\Common Files\Microsoft Shared\Ink
+6c830000 uxtheme.dll         6.2.20348.261 C:\Windows\system32
+6ca60000 COMCTL32.dll        5.82.20348.1  C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.20348.1_none_6a9207a4854d1923
+6dc80000 snmpapi.dll         6.2.20348.1   C:\Windows\SYSTEM32
+713c0000 profapi.dll         6.2.20348.1   C:\Windows\SYSTEM32
+714e0000 windows.storage.dll 6.2.20348.320 C:\Windows\SYSTEM32
+733e0000 IPHLPAPI.DLL        6.2.20348.261 C:\Windows\SYSTEM32
+74840000 WINSTA.dll          6.2.20348.1   C:\Windows\SYSTEM32
+75310000 SspiCli.dll         6.2.20348.261 C:\Windows\SYSTEM32
+75340000 version.dll         6.2.20348.1   C:\Windows\SYSTEM32
+75450000 wtsapi32.dll        6.2.20348.1   C:\Windows\SYSTEM32
+75500000 apphelp.dll         6.2.20348.320 C:\Windows\SYSTEM32
+755b0000 wsock32.dll         6.2.20348.1   C:\Windows\SYSTEM32
+759a0000 KERNELBASE.dll      6.2.20348.320 C:\Windows\System32
+75c10000 SHELL32.dll         6.2.20348.320 C:\Windows\System32
+76700000 shcore.dll          6.2.20348.320 C:\Windows\System32
+767c0000 combase.dll         6.2.20348.288 C:\Windows\System32
+76a50000 ADVAPI32.dll        6.2.20348.320 C:\Windows\System32
+76ca0000 KERNEL32.DLL        6.2.20348.320 C:\Windows\System32
+76d90000 NSI.dll             6.2.20348.1   C:\Windows\System32
+76eb0000 SHLWAPI.dll         6.2.20348.1   C:\Windows\System32
+76f60000 USER32.dll          6.2.20348.320 C:\Windows\System32
+77110000 OLEAUT32.dll        6.2.20348.143 C:\Windows\System32
+771b0000 RPCRT4.dll          6.2.20348.288 C:\Windows\System32
+77270000 GDI32.dll           6.2.20348.143 C:\Windows\System32
+772a0000 ucrtbase.dll        6.2.20348.1   C:\Windows\System32
+773c0000 msvcp_win.dll       6.2.20348.1   C:\Windows\System32
+774b0000 ws2_32.dll          6.2.20348.261 C:\Windows\System32
+77520000 msvcrt.dll          7.0.20348.1   C:\Windows\System32
+775f0000 gdi32full.dll       6.2.20348.261 C:\Windows\System32
+776d0000 ole32.dll           6.2.20348.261 C:\Windows\System32
+777c0000 IMM32.DLL           6.2.20348.1   C:\Windows\System32
+777f0000 sechost.dll         6.2.20348.1   C:\Windows\System32
+77870000 win32u.dll          6.2.20348.320 C:\Windows\System32
+77890000 comdlg32.dll        6.2.20348.1   C:\Windows\System32
+77950000 MSCTF.dll           6.2.20348.143 C:\Windows\System32
+77b70000 ntdll.dll           6.2.20348.320 C:\Windows\SYSTEM32
+
+processes:
+0000 Idle                                        0 0    0
+0004 System                                      0 0    0
+00ac Registry                                    0 0    0
+01dc smss.exe                                    0 0    0
+0260 csrss.exe                                   0 0    0
+02c8 csrss.exe                                   1 0    0
+02fc winlogon.exe                                1 0    0
+0304 wininit.exe                                 0 0    0
+0354 services.exe                                0 0    0
+036c lsass.exe                                   0 0    0
+03e4 svchost.exe                                 0 0    0
+0078 fontdrvhost.exe                             0 0    0
+01a8 fontdrvhost.exe                             1 0    0
+02cc svchost.exe                                 0 0    0
+03fc svchost.exe                                 0 0    0
+0440 dwm.exe                                     1 0    0
+0448 LogonUI.exe                                 1 0    0
+04a4 svchost.exe                                 0 0    0
+056c svchost.exe                                 0 0    0
+0574 svchost.exe                                 0 0    0
+057c svchost.exe                                 0 0    0
+05d8 svchost.exe                                 0 0    0
+05f8 efwd.exe                                    0 0    0
+0600 ekrn.exe                                    0 0    0
+0634 svchost.exe                                 0 0    0
+065c svchost.exe                                 0 0    0
+0674 svchost.exe                                 0 0    0
+06a8 svchost.exe                                 0 0    0
+06cc svchost.exe                                 0 0    0
+0714 svchost.exe                                 0 0    0
+0794 svchost.exe                                 0 0    0
+07ac svchost.exe                                 0 0    0
+0728 svchost.exe                                 0 0    0
+081c svchost.exe                                 0 0    0
+083c svchost.exe                                 0 0    0
+0878 svchost.exe                                 0 0    0
+08c8 svchost.exe                                 0 0    0
+08d0 svchost.exe                                 0 0    0
+0950 svchost.exe                                 0 0    0
+096c svchost.exe                                 0 0    0
+0994 svchost.exe                                 0 0    0
+09ac svchost.exe                                 0 0    0
+0a1c svchost.exe                                 0 0    0
+0a24 svchost.exe                                 0 0    0
+0a4c svchost.exe                                 0 0    0
+0b08 svchost.exe                                 0 0    0
+0b10 svchost.exe                                 0 0    0
+0b4c spoolsv.exe                                 0 0    0
+0a04 svchost.exe                                 0 0    0
+0b04 svchost.exe                                 0 0    0
+0a6c svchost.exe                                 0 0    0
+0c08 svchost.exe                                 0 0    0
+0c18 svchost.exe                                 0 0    0
+0c24 svchost.exe                                 0 0    0
+0c8c vm3dservice.exe                             0 0    0
+0c98 ArcGISPortal.exe                            0 0    0
+0ca0 lkads.exe                                   0 0    0
+0ca8 vmtoolsd.exe                                0 0    0
+0cb0 inetinfo.exe                                0 0    0
+0cc4 SWJobSchedulerSvc.exe                       0 0    0
+0ccc nisvcloc.exe                                0 0    0
+0cd4 gisvc.exe                                   0 0    0
+0d00 Everything.exe                              0 0    0
+0d08 VGAuthService.exe                           0 0    0
+0d10 SMSvcHost.exe                               0 0    0
+0d18 niauth_daemon.exe                           0 0    0
+0d38 ERAAgent.exe                                0 0    0
+0d80 SolarWinds.HighAvailability.Service.exe     0 0    0
+0d88 SolarWinds.Administration.exe               0 0    0
+0dc4 mqsvc.exe                                   0 0    0
+0ddc WinGate.exe                                 0 0    0
+0de4 sqlwriter.exe                               0 0    0
+0e04 StartManSvc.exe                             0 0    0
+0e0c vm3dservice.exe                             1 0    0
+0e50 svchost.exe                                 0 0    0
+0e84 AGMService.exe                              0 0    0
+1238 nimdnsResponder.exe                         0 0    0
+1260 lktsrv.exe                                  0 0    0
+1268 lkcitdl.exe                                 0 0    0
+12f8 nidmsrv.exe                                 0 0    0
+1378 dllhost.exe                                 0 0    0
+07e0 vm3dservice.exe                             1 0    0
+0efc SystemWebServer.exe                         0 0    0
+1390 msdtc.exe                                   0 0    0
+1664 conhost.exe                                 0 0    0
+177c dllhost.exe                                 0 0    0
+17b8 ApplicationWebServer.exe                    0 0    0
+17e8 NIWebServiceContainer.exe                   0 0    0
+0768 NIWebServiceContainer.exe                   0 0    0
+0888 NIWebServiceContainer.exe                   0 0    0
+1808 SWJobEngineSvc.exe                          0 0    0
+067c unsecapp.exe                                0 0    0
+1b90 SolarWinds.InformationService.Service.exe   0 0    0
+1bd8 SolarWinds.InformationService.ServiceV3.exe 0 0    0
+1940 svchost.exe                                 0 0    0
+1a98 conhost.exe                                 0 0    0
+1d74 cmd.exe                                     0 0    0
+191c postgres.exe                                0 0    0
+1ad8 postgres.exe                                0 0    0
+0f44 postgres.exe                                0 0    0
+0e9c postgres.exe                                0 0    0
+1ea4 postgres.exe                                0 0    0
+079c postgres.exe                                0 0    0
+1728 lmgrd.exe                                   0 0    0
+0310 conhost.exe                                 0 0    0
+1974 lmgrd.exe                                   0 0    0
+05b0 ARCGIS.exe                                  0 0    0
+1ef0 javaw.exe                                   0 0    0
+0644 ArcGISServer.exe                            0 0    0   normal
+1c1c postgres.exe                                0 0    0
+1dcc postgres.exe                                0 0    0
+1cc8 svchost.exe                                 0 0    0
+042c svchost.exe                                 0 0    0
+0d20 cmd.exe                                     0 0    0
+1cc4 conhost.exe                                 0 0    0
+1d14 rmid.exe                                    0 0    0
+1e3c javaw.exe                                   0 0    0
+2124 cmd.exe                                     0 0    0
+2130 conhost.exe                                 0 0    0
+2184 javaw.exe                                   0 0    0
+2244 csrss.exe                                   2 0    0
+2278 winlogon.exe                                2 0    0
+2310 fontdrvhost.exe                             2 0    0
+234c dwm.exe                                     2 0    0
+1468 ctfmon.exe                                  2 2    25  high         C:\Windows\System32
+07c4 rdpclip.exe                                 2 4    33  normal       C:\Windows\System32
+27ec sihost.exe                                  2 0    8   normal       C:\Windows\System32
+1b44 taskhostw.exe                               2 2    2   normal       C:\Windows\System32
+2904 svchost.exe                                 0 0    0
+2974 rdpinput.exe                                2 2    5   normal       C:\Windows\System32
+29a0 TabTip.exe                                  2 32   33  high         C:\Program Files\Common Files\microsoft shared\ink
+2a2c TabTip32.exe                                2 0    6   normal       C:\Program Files (x86)\Common Files\Microsoft Shared\ink
+2aa8 explorer.exe                                2 2356 932 normal       C:\Windows
+2b1c svchost.exe                                 0 0    0
+28cc rundll32.exe                                2 2    4   normal       C:\Windows\System32
+0f7c TextInputHost.exe                           2 0    25  normal       C:\Windows\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy
+1cf0 StartMenuExperienceHost.exe                 2 7    19  normal       C:\Windows\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy
+2cdc RuntimeBroker.exe                           2 8    1   normal       C:\Windows\System32
+2e68 svchost.exe                                 0 0    0
+2f20 svchost.exe                                 0 0    0
+2ff4 svchost.exe                                 0 0    0
+2f74 acrotray.exe                                2 45   13  normal       C:\Program Files\Adobe\Acrobat DC\Acrobat
+280c eguiProxy.exe                               2 307  112 normal       C:\Program Files\ESET\ESET Security
+2e1c peerblock.exe                               2 56   125 normal       C:\Program Files\PeerBlock
+2d04 PrivacyEraser64.exe                         2 44   25  normal       C:\Program Files\Cybertron\Privacy Eraser
+030c DTAgent.exe                                 2 27   38  normal       C:\Program Files\DAEMON Tools Ultra
+2764 Internxt.exe                                2 22   212 normal       C:\Users\Administrator\AppData\Local\Programs\internxt-drive
+2e08 nierserver.exe                              2 0    1   normal       C:\Program Files (x86)\National Instruments\Shared\NI Error Reporting
+2e38 WGEngMon.exe                                2 33   15  normal       C:\Program Files\WinGate
+2da8 DTShellHlp.exe                              2 42   4   normal       C:\Program Files\DAEMON Tools Ultra
+2cf4 SSDMonitor.exe                              2 13   9   normal       C:\Program Files (x86)\Common Files\PC Tools\sMonitor
+2fc4 FightersTray.exe                            2 9    8   normal       C:\Program Files (x86)\Fighters\Tray
+2940 sfagent.exe                                 2 8    7   normal       C:\Program Files (x86)\Fighters\SPAMfighter
+2900 DiscSoftBusServiceUltra.exe                 0 0    0
+3058 LiveKitLoader64.exe                         2 0    3   normal       C:\Program Files (x86)\Fighters\SPAMfighter\x64
+3298 svchost.exe                                 2 0    10  normal       C:\Windows\System32
+3570 Internxt.exe                                2 2    4   normal       C:\Users\Administrator\AppData\Local\Programs\internxt-drive
+27f4 Internxt.exe                                2 3    2   above normal C:\Users\Administrator\AppData\Local\Programs\internxt-drive
+1408 firefox.exe                                 2 84   269 normal       C:\Program Files\Mozilla Firefox
+1fd4 crashhelper.exe                             2 0    1   normal       C:\Program Files\Mozilla Firefox
+33a8 firefox.exe                                 2 0    14  above normal C:\Program Files\Mozilla Firefox
+37b8 firefox.exe                                 2 0    0   normal       C:\Program Files\Mozilla Firefox
+375c firefox.exe                                 2 0    0   idle         C:\Program Files\Mozilla Firefox
+3710 firefox.exe                                 2 0    2   normal       C:\Program Files\Mozilla Firefox
+279c firefox.exe                                 2 0    0   normal       C:\Program Files\Mozilla Firefox
+3354 firefox.exe                                 2 0    0   normal       C:\Program Files\Mozilla Firefox
+2b80 firefox.exe                                 2 0    0   normal       C:\Program Files\Mozilla Firefox
+2530 svchost.exe                                 0 0    0
+28ac MusNotifyIcon.exe                           2 179  60  below normal C:\Windows\System32
+1f10 Internxt.exe                                2 0    1   idle         C:\Users\Administrator\AppData\Local\Programs\internxt-drive
+3e94 Internxt.exe                                2 0    1   normal       C:\Users\Administrator\AppData\Local\Programs\internxt-drive
+32d8 ApplicationFrameHost.exe                    2 12   3   normal       C:\Windows\System32
+1e4c SecurityHealthService.exe                   0 0    0
+0784 dllhost.exe                                 2 0    3   normal       C:\Windows\System32
+28e0 OneDrive.Sync.Service.exe                   2 13   11  below normal C:\Program Files\Microsoft OneDrive\26.078.0426.0002
+3be8 svchost.exe                                 0 0    0
+3b2c svchost.exe                                 2 0    1   normal       C:\Windows\System32
+4b34 WinRAR.exe                                  2 792  74  normal       C:\Program Files\WinRAR
+334c notepad.exe                                 2 21   27  normal       C:\Windows\System32
+3684 notepad.exe                                 2 21   27  normal       C:\Windows\System32
+3d38 notepad.exe                                 2 21   27  normal       C:\Windows\System32
+4734 cmd.exe                                     2 0    0   normal       C:\Windows\System32
+4abc conhost.exe                                 2 26   21  normal       C:\Windows\System32
+44c4 ShellExperienceHost.exe                     2 6    33  normal       C:\Windows\SystemApps\ShellExperienceHost_cw5n1h2txyewy
+4684 RuntimeBroker.exe                           2 40   4   normal       C:\Windows\System32
+26f4 WinRAR.exe                                  2 772  74  normal       C:\Program Files\WinRAR
+4d44 chrome.exe                                  2 311  73  normal       C:\Program Files\Google\Chrome\Application
+438c chrome.exe                                  2 2    3   normal       C:\Program Files\Google\Chrome\Application
+140c chrome.exe                                  2 6    2   above normal C:\Program Files\Google\Chrome\Application
+4908 chrome.exe                                  2 0    3   normal       C:\Program Files\Google\Chrome\Application
+49ec chrome.exe                                  2 0    0   normal       C:\Program Files\Google\Chrome\Application
+27e4 chrome.exe                                  2 0    0   idle         C:\Program Files\Google\Chrome\Application
+2c30 chrome.exe                                  2 0    0   idle         C:\Program Files\Google\Chrome\Application
+27dc chrome.exe                                  2 0    0   normal       C:\Program Files\Google\Chrome\Application
+3018 chrome.exe                                  2 0    0   idle         C:\Program Files\Google\Chrome\Application
+3edc chrome.exe                                  2 0    1   normal       C:\Program Files\Google\Chrome\Application
+4fa0 chrome.exe                                  2 0    1   normal       C:\Program Files\Google\Chrome\Application
+523c WinRAR.exe                                  2 754  68  normal       C:\Program Files\WinRAR
+3f94 WinRAR.exe                                  2 756  65  normal       C:\Program Files\WinRAR
+4bc4 SnippingTool.exe                            2 127  74  normal       C:\Windows\System32
+4a60 chrome.exe                                  2 0    0   idle         C:\Program Files\Google\Chrome\Application
+233c chrome.exe                                  2 0    0   idle         C:\Program Files\Google\Chrome\Application
+55b4 RuntimeBroker.exe                           2 0    1   normal       C:\Windows\System32
+071c putty.exe                                   2 31   25  normal       C:\Program Files\PuTTY
+454c ESETOnlineScanner.exe                       2 96   19  below normal C:\Users\Administrator\AppData\Local\ESET\ESETOnlineScanner
+3938 chrome.exe                                  2 0    0   idle         C:\Program Files\Google\Chrome\Application
+5328 chrome.exe                                  2 0    0   idle         C:\Program Files\Google\Chrome\Application
+2638 chrome.exe                                  2 0    0   idle         C:\Program Files\Google\Chrome\Application
+61b4 chrome.exe                                  2 0    0   idle         C:\Program Files\Google\Chrome\Application
+51e0 chrome.exe                                  2 0    0   idle         C:\Program Files\Google\Chrome\Application
+21cc chrome.exe                                  2 0    0   idle         C:\Program Files\Google\Chrome\Application
+28a8 chrome.exe                                  2 0    0   idle         C:\Program Files\Google\Chrome\Application
+2828 chrome.exe                                  2 0    0   idle         C:\Program Files\Google\Chrome\Application
+3c50 GitHubDesktop.exe                           2 20   44  normal       C:\Users\Administrator\AppData\Local\GitHubDesktop\app-3.5.12
+2ea4 GitHubDesktop.exe                           2 4    2   above normal C:\Users\Administrator\AppData\Local\GitHubDesktop\app-3.5.12
+42b0 GitHubDesktop.exe                           2 0    3   normal       C:\Users\Administrator\AppData\Local\GitHubDesktop\app-3.5.12
+2ccc GitHubDesktop.exe                           2 0    1   idle         C:\Users\Administrator\AppData\Local\GitHubDesktop\app-3.5.12
+4d84 filezilla.exe                               2 523  494 normal       C:\Program Files\FileZilla FTP Client
+43f8 WinRAR.exe                                  2 643  71  normal       C:\Program Files\WinRAR
+3d70 WinRAR.exe                                  2 624  61  normal       C:\Program Files\WinRAR
+5d24 WinRAR.exe                                  2 639  65  normal       C:\Program Files\WinRAR
+55ac WinRAR.exe                                  2 639  69  normal       C:\Program Files\WinRAR
+5930 notepad++.exe                               2 387  251 normal       C:\Program Files (x86)\Notepad++
+7378 Everything.exe                              2 204  95  normal       C:\Program Files\Everything
+72a0 chrome.exe                                  2 0    0   idle         C:\Program Files\Google\Chrome\Application
+85d0 browser_assistant.exe                       2 11   9   below normal C:\Users\Administrator\AppData\Local\Programs\Opera\assistant
+6c20 browser_assistant.exe                       2 2    4   below normal C:\Users\Administrator\AppData\Local\Programs\Opera\assistant
+6ecc unsecapp.exe                                2 0    2   normal       C:\Windows\System32\wbem
+76fc EmEditor.exe                                2 134  83  normal       C:\Users\Administrator\AppData\Local\Programs\EmEditor
+912c notepad.exe                                 2 21   27  normal       C:\Windows\System32
+2f04 notepad.exe                                 2 21   27  normal       C:\Windows\System32
+75d8 firefox.exe                                 2 0    0   idle         C:\Program Files\Mozilla Firefox
+8bd8 MySQL Workbench.exe                         2 27   41  normal       C:\Users\Administrator\AppData\Local\Programs\MySQL\MySQL Workbench
+2b50 MySQL Workbench.exe                         2 4    2   above normal C:\Users\Administrator\AppData\Local\Programs\MySQL\MySQL Workbench
+5cf4 MySQL Workbench.exe                         2 0    3   normal       C:\Users\Administrator\AppData\Local\Programs\MySQL\MySQL Workbench
+5d4c MySQL Workbench.exe                         2 0    1   idle         C:\Users\Administrator\AppData\Local\Programs\MySQL\MySQL Workbench
+4dac mysqlsh.exe                                 2 0    1   normal       C:\Users\Administrator\AppData\Local\Programs\MySQL\MySQL Workbench\resources\app\shell\bin
+4b3c conhost.exe                                 2 10   3   normal       C:\Windows\System32
+6f3c firefox.exe                                 2 0    0   idle         C:\Program Files\Mozilla Firefox
+7470 firefox.exe                                 2 0    0   idle         C:\Program Files\Mozilla Firefox
+05ac firefox.exe                                 2 0    0   idle         C:\Program Files\Mozilla Firefox
+38a4 firefox.exe                                 2 0    0   idle         C:\Program Files\Mozilla Firefox
+85dc firefox.exe                                 2 0    0   idle         C:\Program Files\Mozilla Firefox
+2de0 firefox.exe                                 2 0    0   idle         C:\Program Files\Mozilla Firefox
+268c sppsvc.exe                                  0 0    0
+7f48 svchost.exe                                 0 0    0
+5ce8 Grammarly.Desktop.exe                       2 91   121 normal       C:\Users\Administrator\AppData\Local\Grammarly\DesktopIntegrations
+672c Superhuman.WebUI.exe                        2 76   80  normal       C:\Users\Administrator\AppData\Local\Grammarly\DesktopIntegrations
+4f74 conhost.exe                                 2 10   3   normal       C:\Windows\System32
+838c msedgewebview2.exe                          2 53   54  normal       C:\Program Files (x86)\Microsoft\EdgeWebView\Application\153.0.4234.32
+3954 msedgewebview2.exe                          2 2    3   normal       C:\Program Files (x86)\Microsoft\EdgeWebView\Application\153.0.4234.32
+619c msedgewebview2.exe                          2 13   17  above normal C:\Program Files (x86)\Microsoft\EdgeWebView\Application\153.0.4234.32
+37a8 msedgewebview2.exe                          2 0    5   normal       C:\Program Files (x86)\Microsoft\EdgeWebView\Application\153.0.4234.32
+86d8 msedgewebview2.exe                          2 0    0   normal       C:\Program Files (x86)\Microsoft\EdgeWebView\Application\153.0.4234.32
+3d14 msedgewebview2.exe                          2 0    0   normal       C:\Program Files (x86)\Microsoft\EdgeWebView\Application\153.0.4234.32
+6374 msedgewebview2.exe                          2 20   31  normal       C:\Program Files (x86)\Microsoft\EdgeWebView\Application\153.0.4234.32
+92a8 msedgewebview2.exe                          2 2    3   normal       C:\Program Files (x86)\Microsoft\EdgeWebView\Application\153.0.4234.32
+5914 msedgewebview2.exe                          2 2    7   above normal C:\Program Files (x86)\Microsoft\EdgeWebView\Application\153.0.4234.32
+58e4 msedgewebview2.exe                          2 0    5   normal       C:\Program Files (x86)\Microsoft\EdgeWebView\Application\153.0.4234.32
+4c64 msedgewebview2.exe                          2 0    0   normal       C:\Program Files (x86)\Microsoft\EdgeWebView\Application\153.0.4234.32
+58c0 msedgewebview2.exe                          2 0    0   normal       C:\Program Files (x86)\Microsoft\EdgeWebView\Application\153.0.4234.32
+3b9c msedgewebview2.exe                          2 0    0   normal       C:\Program Files (x86)\Microsoft\EdgeWebView\Application\153.0.4234.32
+78e4 msedgewebview2.exe                          2 0    0   normal       C:\Program Files (x86)\Microsoft\EdgeWebView\Application\153.0.4234.32
+4a88 msedgewebview2.exe                          2 0    0   normal       C:\Program Files (x86)\Microsoft\EdgeWebView\Application\153.0.4234.32
+52e0 msedgewebview2.exe                          2 0    0   idle         C:\Program Files (x86)\Microsoft\EdgeWebView\Application\153.0.4234.32
+6db4 msedgewebview2.exe                          2 0    0   idle         C:\Program Files (x86)\Microsoft\EdgeWebView\Application\153.0.4234.32
+716c armsvc.exe                                  0 0    0
+75b0 MBAMService.exe                             0 0    0
+4c84 MsMpEng.exe                                 0 0    0
+71a4 MpDefenderCoreService.exe                   0 0    0
+9028 NisSrv.exe                                  0 0    0
+76cc DefenderSessionHelper.exe                   2 0    2   normal       C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.26080.4-0
+6fb4 WinRAR.exe                                  2 304  67  normal       C:\Program Files\WinRAR
+6f50 firefox.exe                                 2 0    0   normal       C:\Program Files\Mozilla Firefox
+50d4 firefox.exe                                 2 0    0   normal       C:\Program Files\Mozilla Firefox
+6724 firefox.exe                                 2 0    0   normal       C:\Program Files\Mozilla Firefox
+13b0 firefox.exe                                 2 0    0   normal       C:\Program Files\Mozilla Firefox
+6ad8 dllhost.exe                                 2 0    7   normal       C:\Windows\SysWOW64
+61bc OfficeClickToRun.exe                        0 0    0
+73ec AppVShNotify.exe                            2 0    1   normal       C:\Program Files\Common Files\microsoft shared\ClickToRun
+8650 EXCEL.EXE                                   2 343  180 normal       C:\Program Files\Microsoft Office\root\Office16
+4a24 ArcSOC.exe                                  0 0    0
+3388 ArcSOC.exe                                  0 0    0
+6914 svchost.exe                                 0 0    0
+8b88 WmiPrvSE.exe                                0 0    0
+5884 chrome.exe                                  2 0    0   idle         C:\Program Files\Google\Chrome\Application
+81d0 cmd.exe                                     2 0    0   normal       C:\Windows\System32
+7de0 conhost.exe                                 2 18   11  normal       C:\Windows\System32
+7f40 MbamBgNativeMsg.exe                         2 0    2   normal       C:\Program Files\Malwarebytes\Anti-Malware
+7100 healthcheck.exe                             2 181  78  normal       C:\Program Files (x86)\Innovative Solutions\Advanced Uninstaller PRO
+3420 RegMech.exe                                 2 639  313 normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+6588 emedtray.exe                                2 12   7   normal       C:\Users\Administrator\AppData\Local\Programs\EmEditor
+5c40 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+8ddc Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+7144 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+6894 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+6edc Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+3b68 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+4b40 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+7344 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+36dc Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+4cf8 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+4504 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+4e60 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+567c Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+4b88 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+4004 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+73b8 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+6134 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+7e60 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+1464 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+68e0 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+6640 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+71b8 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+7e30 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+4508 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+66ec Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+703c Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+5550 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+6c6c Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+8630 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+5bc8 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+4bb8 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+7d04 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+47cc Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+4840 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+69d8 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+78bc Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+59a0 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+6d40 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+1724 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+6550 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+78fc Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+75d0 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+71ec Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+7a74 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+7b70 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+5850 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+6e98 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+8c60 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+3cc8 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+8f94 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+1ac8 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+6e0c Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+6960 SearchApp.exe                               2 0    9   normal       C:\Windows\SystemApps\Microsoft.Windows.Search_cw5n1h2txyewy
+1234 RuntimeBroker.exe                           2 36   1   normal       C:\Windows\System32
+4774 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+6b98 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+52fc Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+72fc Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+49f8 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+81dc Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+47e4 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+6480 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+5cd4 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+59a4 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+168c Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+8610 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+3300 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+4ddc Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+80b0 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+19dc Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+1450 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+248c Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+3fd4 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+8940 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+5350 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+90a0 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+3ca0 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+57ec Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+2ea8 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+7ef0 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+90f8 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+3444 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+3a20 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+6de8 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+6028 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+17ac Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+47a4 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+4690 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+4dec Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+3988 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+09e0 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+0464 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+3118 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+6510 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+92bc Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+63b4 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+4a54 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+4bd8 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+7138 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+7ae0 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+771c Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+8098 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+60b0 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+290c Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+4330 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+53a0 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+7e24 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+7968 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+7218 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+2ffc Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+3e40 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+63e0 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+87c4 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+3e30 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+2194 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+6244 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+3430 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+45b0 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+38c8 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+5ff0 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+8774 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+92d4 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+631c Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+7220 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+8e8c Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+7240 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+6164 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+93cc Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+7c84 ArcSOC.exe                                  0 0    0
+7c40 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+647c Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+5224 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+426c Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+825c Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+7c90 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+71f8 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+0ea0 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+4de4 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+200c Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+7448 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+1e74 WUDFHost.exe                                0 0    0
+60f4 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+247c Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+3af0 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+6268 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+7e7c Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+5538 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+34ac Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+3390 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+683c Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+2994 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+8154 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+4ba0 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+5734 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+6930 Update.exe                                  2 47   37  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+68a0 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+2fdc Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+6c50 svchost.exe                                 0 0    0
+7970 Update.exe                                  2 47   39  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+5c44 Update.exe                                  2 47   40  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+8b74 WmiPrvSE.exe                                0 0    0
+2754 Update.exe                                  2 47   42  normal       C:\Program Files (x86)\PC Tools\PC Tools Registry Mechanic
+
+hardware:
++ {1ed2bbf9-11f0-4084-b21f-ad83a8e6dcdc}
+  - Adobe PDF (redirected 2)
+  - EPSON WF-4830 Series (FAX) (redirected 2)
+  - EPSON WF-4830 Series (redirected 2)
+  - Microsoft Print to PDF
+  - Microsoft Print to PDF (redirected 2)
+  - Microsoft XPS Document Writer
+  - OneNote (Desktop)
+  - OneNote (Desktop) (redirected 2)
+  - Root Print Queue
++ {36fc9e60-c465-11cf-8056-444553540000}
+  - DAEMON Tools Ultra Virtual USB Bus (driver 3.6.0.0)
+  - Standard USB 3.1 eXtensible Host Controller - 1.0 (Microsoft)
+  - USB Composite Device
+  - USB Root Hub (USB 3.0)
++ {4d36e965-e325-11ce-bfc1-08002be10318}
+  - NECVMWar VMware SATA CD00
++ {4d36e966-e325-11ce-bfc1-08002be10318}
+  - ACPI x64-based PC
++ {4d36e967-e325-11ce-bfc1-08002be10318}
+  - VMware Virtual disk SCSI Disk Device
++ {4d36e968-e325-11ce-bfc1-08002be10318}
+  - Microsoft Remote Display Adapter
+  - VMware SVGA 3D (driver 8.17.3.1)
++ {4d36e96a-e325-11ce-bfc1-08002be10318}
+  - ATA Channel 0
+  - ATA Channel 1
+  - Intel(R) 82371AB/EB PCI Bus Master IDE Controller
+  - Standard SATA AHCI Controller
++ {4d36e96b-e325-11ce-bfc1-08002be10318}
+  - Remote Desktop Keyboard Device
+  - Standard PS/2 Keyboard
++ {4d36e96e-e325-11ce-bfc1-08002be10318}
+  - Generic Non-PnP Monitor
+  - Generic Non-PnP Monitor
++ {4d36e96f-e325-11ce-bfc1-08002be10318}
+  - HID-compliant mouse
+  - Remote Desktop Mouse Device
+  - VMware Pointing Device (driver 12.5.10.0)
+  - VMware USB Pointing Device (driver 12.5.10.0)
++ {4d36e972-e325-11ce-bfc1-08002be10318}
+  - Intel(R) 82574L Gigabit Network Connection
+  - TeamViewer VPN Adapter (driver 9.24.6.601)
++ {4d36e97b-e325-11ce-bfc1-08002be10318}
+  - DAEMON Tools Ultra Virtual SCSI Bus (driver 5.29.0.0)
+  - Microsoft Storage Spaces Controller
+  - VMware PVSCSI Controller (driver 1.3.17.0)
++ {4d36e97d-e325-11ce-bfc1-08002be10318}
+  - ACPI Fixed Feature Button
+  - Composite Bus Enumerator
+  - CPU to PCI Bridge
+  - Direct memory access controller
+  - EISA programmable interrupt controller
+  - Generic Bus
+  - High precision event timer
+  - Microsoft ACPI-Compliant System
+  - Microsoft Basic Display Driver
+  - Microsoft Basic Render Driver
+  - Microsoft Hyper-V Generation Counter
+  - Microsoft System Management BIOS Driver
+  - Microsoft Virtual Drive Enumerator
+  - Motherboard resources
+  - Motherboard resources
+  - Motherboard resources
+  - NDIS Virtual Network Adapter Enumerator
+  - PCI Bus
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI Express Root Port
+  - PCI to ISA Bridge
+  - PCI-to-PCI Bridge
+  - PCI-to-PCI Bridge
+  - Plug and Play Software Device Enumerator
+  - Remote Desktop Device Redirector Bus
+  - System CMOS/real time clock
+  - System speaker
+  - System timer
+  - UMBus Enumerator
+  - UMBus Root Bus Enumerator
+  - VMware VMCI Bus Device (driver 9.8.16.0)
+  - VMware VMCI Host Device (driver 9.8.16.0)
+  - Volume Manager
++ {50127dc3-0f36-415e-a6cc-4cb3be910b65}
+  - Intel(R) Xeon(R) CPU E5-2470 v2 @ 2.40GHz
+  - Intel(R) Xeon(R) CPU E5-2470 v2 @ 2.40GHz
+  - Intel(R) Xeon(R) CPU E5-2470 v2 @ 2.40GHz
+  - Intel(R) Xeon(R) CPU E5-2470 v2 @ 2.40GHz
+  - Intel(R) Xeon(R) CPU E5-2470 v2 @ 2.40GHz
+  - Intel(R) Xeon(R) CPU E5-2470 v2 @ 2.40GHz
+  - Intel(R) Xeon(R) CPU E5-2470 v2 @ 2.40GHz
+  - Intel(R) Xeon(R) CPU E5-2470 v2 @ 2.40GHz
++ {72631e54-78a4-11d0-bcf7-00aa00b7b32a}
+  - Microsoft AC Adapter
++ {745a17a0-74d3-11d0-b6fe-00a0c90f57da}
+  - USB Input Device
+  - USB Input Device
+
+cpu registers:
+eax = 02e67218
+ebx = 00000008
+ecx = 00000000
+edx = 0045f871
+esi = 005bebf0
+edi = 0000010b
+eip = 0045f871
+esp = 0019f5d4
+ebp = 0019f628
+
+stack dump:
+0019f5d4  71 f8 45 00 de fa ed 0e - 01 00 00 00 07 00 00 00  q.E.............
+0019f5e4  e8 f5 19 00 71 f8 45 00 - 18 72 e6 02 08 00 00 00  ....q.E..r......
+0019f5f4  f0 eb 5b 00 0b 01 00 00 - 28 f6 19 00 04 f6 19 00  ..[.....(.......
+0019f604  40 f6 19 00 b0 4a 40 00 - 28 f6 19 00 00 00 00 00  @....J@.(.......
+0019f614  00 00 00 00 08 00 00 00 - 00 ff ff ff f8 00 e1 02  ................
+0019f624  0b 3a cb 76 4c f6 19 00 - fa f7 45 00 70 ac 4f 00  .:.vL.....E.p.O.
+0019f634  6e 00 00 00 69 68 50 00 - 44 ec 5b 00 54 f6 19 00  n...ihP.D.[.T...
+0019f644  b0 4a 40 00 4c f6 19 00 - 70 f6 19 00 c3 4e 40 00  .J@.L...p....N@.
+0019f654  8c f6 19 00 47 4c 40 00 - 70 f6 19 00 f0 23 00 00  ....GL@.p....#..
+0019f664  44 94 0b 5a e4 cd 5b 00 - ec cd 5b 00 98 f6 19 00  D..Z..[...[.....
+0019f674  2b 4f 40 00 9f 7a 40 00 - 01 00 00 00 dd f8 5b 00  +O@..z@.......[.
+0019f684  01 00 00 00 74 f6 19 00 - 50 fe 19 00 38 4d 40 00  ....t...P...8M@.
+0019f694  98 f6 19 00 d8 f6 19 00 - 07 68 54 02 00 00 40 00  .........hT...@.
+0019f6a4  00 00 00 00 b0 88 a8 00 - 05 00 00 00 02 00 00 00  ................
+0019f6b4  78 9b af 59 d9 22 64 00 - 00 00 40 00 00 fe 19 00  x..Y."d...@.....
+0019f6c4  00 00 00 00 00 00 00 00 - 44 94 0b 5a 30 b6 62 00  ........D..Z0.b.
+0019f6d4  fe ff ff ff 60 fe 19 00 - 1d ce 62 00 a8 ee 66 00  ....`.....b...f.
+0019f6e4  83 54 3e d1 f0 23 00 00 - 02 00 00 00 01 00 00 00  .T>..#..........
+0019f6f4  0a 00 00 00 02 00 00 02 - 1c f7 19 00 2f 03 bd 77  ............/..w
+0019f704  e9 61 bb 77 3d a4 a6 44 - 40 60 a9 00 00 00 a8 00  .a.w=..D@`......
+
+disassembling:
+004fac64      public TntSysUtils.WinCheckH:    ; function entry point
+004fac64 1468   push    ebx
+004fac65        mov     ebx, eax
+004fac67 1469   test    ebx, ebx
+004fac69        jnz     loc_4fac70
+004fac69
+004fac6b      > call    -$9b480 ($45f7f0)      ; SysUtils.RaiseLastOSError
+004fac6b
+004fac70      loc_4fac70:
+004fac70 1470   mov     eax, ebx
+004fac72 1471   pop     ebx
+004fac73        ret
