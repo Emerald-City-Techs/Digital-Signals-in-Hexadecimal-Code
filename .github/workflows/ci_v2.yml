@@ -1,0 +1,59 @@
+name: RT Hexadecimal Computing Core CI
+
+on:
+  push:
+    branches: [ "master", "main" ]
+  pull_request:
+    branches: [ "master", "main" ]
+
+jobs:
+  validate-and-build:
+    name: Framework Audit, HDL Syntax, and Native C Compilation
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Pull down repository snapshot
+    - name: Checkout Code Repository
+      uses: actions/checkout@v4
+
+    # 2. Provision Icarus Verilog dependencies
+    - name: Install Hardware Toolchain (Icarus Verilog)
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y iverilog
+
+    # 3. Initialize Runtime Environment
+    - name: Set up Python Environment
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+
+    # 4. Handle Dependency Trees
+    - name: Install Simulation Infrastructure Prerequisites
+      run: |
+        if [ -f src/requirements.text ]; then
+          pip install -r src/requirements.text
+        fi
+
+    # 5. Enforce Repository Formatting and Namespace Rules
+    - name: Execute Workspace Infrastructure Audit
+      run: |
+        chmod +x build_hex_board.py
+        python build_hex_board.py --verify-thermal-limits
+
+    # 6. Run Integrated Verification and Build Stack
+    - name: Execute Complete Build Stack (HDL Verify + C Compile)
+      run: |
+        make setup
+        make verify
+        make hdl-verify
+        make
+
+    # 7. Archive compiled hardware driver binary assets
+    - name: Archive Production Hardware Streamer Binary
+      uses: actions/upload-artifact@v4
+      with:
+        name: hex-pcie-streamer-binary
+        path: build/hex_pcie_streamer
+        retention-days: 7
