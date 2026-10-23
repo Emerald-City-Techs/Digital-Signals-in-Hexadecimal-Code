@@ -1,0 +1,55 @@
+; File: src/chips/adapters/hex_pcie.inf
+; Windows Installation File (INF) for the Revolutionary Technology (RT) Hexadecimal Platform
+
+[Version]
+Signature   = "$WINDOWS NT$"
+Class       = System
+ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318}
+Provider    = %ManufacturerName%
+CatalogFile = hex_pcie.cat
+DriverVer   = 10/22/2026,1.0.0.1
+PnpLockdown = 1
+
+[DestinationDirs]
+DefaultDestDir = 13
+
+[SourceDisksNames]
+1 = %DiskName%,,,
+
+[SourceDisksFiles]
+hex_pcie_driver.sys = 1,,
+
+; --- Hardware IDs / PnP Registration Mapping Matrix ---
+
+[Manufacturer]
+%ManufacturerName% = Standard,NTamd64
+
+[Standard.NTamd64]
+%DeviceName% = HexPCIe_Device_Install, PCI\VEN_165A&DEV_0001
+
+; --- Installation Infrastructure Configuration Steps ---
+
+[HexPCIe_Device_Install.NT]
+CopyFiles = HexPCIe_CopyFiles
+
+[HexPCIe_CopyFiles]
+hex_pcie_driver.sys
+
+[HexPCIe_Device_Install.NT.Services]
+AddService = hex_pcie_driver,%SPSVCINST_ASSOCSERVICE%,HexPCIe_Service_Install
+
+[HexPCIe_Service_Install]
+DisplayName    = %ServiceDesc%
+ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
+StartType      = 3               ; SERVICE_DEMAND_START
+ErrorControl   = 1               ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %13%\hex_pcie_driver.sys
+
+; --- Structural Token Definitions ---
+
+[Strings]
+SPSVCINST_ASSOCSERVICE = 0x00000002
+ManufacturerName       = "Revolutionary Technology Company"
+DiskName               = "RT Architecture Driver Installation Media"
+DeviceName             = "RT Hexadecimal 16-State Analog Computing Coprocessor Bridge"
+ServiceDesc            = "RT Hexadecimal PCIe Address Space Access Translation Kernel Module"
